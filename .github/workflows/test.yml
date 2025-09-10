@@ -3,11 +3,11 @@ name: Test Vitepress
 on:
   pull_request:
     branches: [main]
-    paths:
-      - ".editorconfig"
-      - ".gitignore"
-      - ".prettierrc.yaml"
-      - "!README.md"
+    paths-ignore:
+      - '.editorconfig'
+      - '.gitignore'
+      - '.prettierrc.yaml'
+      - 'README.md'
 
 permissions:
   contents: read
@@ -27,4 +27,5 @@ jobs:
           cache: npm
       - run: |
           npm ci
+          npm run format:ci
           npm run docs:build
