@@ -6,14 +6,10 @@
 - Qualunque cosa decisa in questo modo può contraddire ogni regola in questo documento. Per ruling specifici delle carte puoi consultare la sezione delle [FAQ](#faq).
 - Il gioco prosegue con le normali regole di Magic tranne dove diversamente specificato da questo documento.
 
----
-
 ## Materiali di Gioco
 
 - Un **mazzo di carte da briscola** (40 carte tradizionali).
 - Non sono ammesse carte extra oltre a queste.
-
----
 
 ## Struttura del Mazzo
 
@@ -32,15 +28,11 @@
 - **Tre 7**
 - **Due 6**
 
----
-
 ## Setup Iniziale
 
 - Ogni giocatore parte con **12 punti vita**.
 - Ad inizio partita ogni giocatore pesca **3** dal mazzo principale.
 - Il limite di carte in mano è **5**.
-
----
 
 ## Regole di Gioco
 
@@ -56,8 +48,6 @@
 
 4. **Rimescolamento**: Quando il **mazzo principale** termina, il cimitero si rimescola e diventa il nuovo mazzo principale.
 
----
-
 ## Limitazioni
 
 - **Cimitero**: non si può mai interagire con il cimitero.
@@ -68,15 +58,11 @@
 
   - **Controllo della mano**: non si possono giocare carte che guardano la mano dell'avversario e che fanno scartare una o più carte a scelta.
 
----
-
 ## REL Competitive
 
 - I nomi delle carte devono essere imparati a memoria, altrimenti sarebbe troppo facile.
 
----
-
-### Regola addizionale
+## Regole addizionali
 
 - Se la durata della partita si è protratta a lungo, se entrambi i giocatori sono d'accordo, possono decidere come continuare a giocare le terre una volta che il mazzo dedicato è terminato. Di seguito sono elencati alcuni suggerimenti:
   - I giocatori continuano a giocare le terre usando carte provenienti da un altro mazzo di carte o usando altri oggetti

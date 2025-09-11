@@ -15,7 +15,7 @@ In questa pagina sono proposti dei link a Scryfall per conoscere le carte con gl
 Cerca per {{ tag.title }} divisi per colore:
 
 <ul>
-<li v-for="color in colors" :key="color"><a :href="`https://scryfall.com/search?q=legal%3Apauper+otag%3A${tag.tag}$+color%3D${color}&order=cmc&dir=asc&as=grid&unique=cards`" target="_blank">{{ color }}</a></li>
+<li v-for="color in colors" :key="color"><a :href="`https://scryfall.com/search?q=legal%3Apauper+otag%3A${tag.tag}+color%3D${color}&order=cmc&dir=asc&as=grid&unique=cards`" target="_blank">{{ color }}</a></li>
 </ul>
 
 Puoi cercare su [Scryfall](https://scryfall.com) usando questo filtro:
@@ -34,7 +34,7 @@ const colors = ["W", "U", "B", "R", "G"];
 const tags = [
   {
     title: "Card advantage",
-    tag: "card advantage",
+    tag: "card-advantage",
     desc: "Things that give you access to more cards. (The technical meaning of card advantage can be much broader than this, but this is what we're using here.)",
   },
   {

@@ -6,14 +6,10 @@
 - Any ruling decided in this way can override every rule in this document. For card-specific rulings, see the [FAQ](#faq).
 - The game proceeds with the normal rules of Magic except where otherwise specified in this document.
 
----
-
 ## Game Materials
 
 - A **briscola deck** (40 traditional Italian cards).
 - No extra cards are allowed beyond these.
-
----
 
 ## Deck Structure
 
@@ -32,15 +28,11 @@
 - **Three 7s**
 - **Two 6s**
 
----
-
 ## Initial Setup
 
 - Each player starts with **12 life points**.
 - At the beginning of the game, each player draws **3 cards** from the main deck.
 - The maximum hand size is **5**.
-
----
 
 ## Gameplay Rules
 
@@ -55,8 +47,6 @@
 
 4. **Reshuffling**: When the **main deck** runs out, the graveyard is reshuffled to become the new main deck.
 
----
-
 ## Limitations
 
 - **Graveyard**: You can never interact with the graveyard.
@@ -66,21 +56,15 @@
   - **Direct Damage**: The opponent cannot take damage from spells. Damage from abilities, however, remains legal.
   - **Hand Control**: You cannot play cards that look at the opponent’s hand or make them discard one or more cards of your choice.
 
----
-
 ## Competitive REL
 
 - Card names must be memorized; otherwise, the game would be too easy.
 
----
-
-### Additional Rule
+## Additional Rules
 
 - If the game lasts for a long time and both players agree, they may decide how to continue playing lands once the dedicated land deck has run out. Suggested options include:
   - Players continue to play lands using cards from another deck or with other objects.
   - Players agree to stop once each has 9 lands in play, without going beyond that.
-
----
 
 ## FAQ
 
