@@ -15,7 +15,11 @@ In questa pagina sono proposti dei link a Scryfall per conoscere le carte con gl
 Cerca per {{ tag.title }} divisi per colore:
 
 <ul>
-<li v-for="color in colors" :key="color"><a :href="`https://scryfall.com/search?q=legal%3Apauper+otag%3A${tag.tag}+color%3D${color}&order=cmc&dir=asc&as=grid&unique=cards`" target="_blank">{{ color }}</a></li>
+  <li v-for="color in colors" :key="color">
+    <a :href="`https://scryfall.com/search?q=legal%3Apauper+otag%3A${tag.tag}+color%3D${color}&order=cmc&dir=asc&as=grid&unique=cards`" target="_blank">
+      <img :src="`${sym[color]}`" :alt="color" style="height: 1.2em; display: inline-block; vertical-align: middle;"></img>
+    </a>
+  </li>
 </ul>
 
 Puoi cercare su [Scryfall](https://scryfall.com) usando questo filtro:
@@ -27,9 +31,11 @@ Puoi cercare su [Scryfall](https://scryfall.com) usando questo filtro:
 </div>
 
 <script setup>
-import { ref } from "vue"
+import { useManaSymbols } from "./.vitepress/composables/manaSymbols.ts";
 
 const colors = ["W", "U", "B", "R", "G"];
+
+const sym = useManaSymbols().symbols;
 
 const tags = [
   {

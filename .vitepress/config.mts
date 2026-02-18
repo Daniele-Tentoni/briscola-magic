@@ -15,7 +15,7 @@ export default defineConfig({
       'link',
       {
         rel: 'icon',
-        href: 'https://www.lpfc.it/_astro/lpfc.n7hMU2D0_15SpMq.svg',
+        href: 'https://www.lpfc.it/_astro/lpfc.n7hMU2D0_CEqG4.svg',
       },
     ],
   ],
@@ -54,6 +54,7 @@ export default defineConfig({
             items: [
               { text: 'Regole', link: '/rules' },
               { text: 'Carte', link: '/card-examples' },
+              { text: 'Bandite', link: '/banned' },
             ],
           },
           { text: 'LPFC', link: 'https://www.lpfc.it/' },
@@ -62,9 +63,9 @@ export default defineConfig({
           {
             text: 'Introduzione',
             items: [
-              { text: 'Benvenuto', link: '/' },
               { text: 'Regole', link: '/rules' },
               { text: 'Carte', link: '/card-examples' },
+              { text: 'Bandite', link: '/banned' },
             ],
           },
         ],
@@ -83,6 +84,7 @@ export default defineConfig({
             items: [
               { text: 'Rules', link: '/en/rules' },
               { text: 'Cards', link: '/en/card-examples' },
+              { text: "Banned", link: "/banned" }
             ],
           },
           { text: 'LPFC', link: 'https://www.lpfc.it/' },
@@ -93,6 +95,7 @@ export default defineConfig({
             items: [
               { text: 'Rules', link: '/en/rules' },
               { text: 'Cards', link: '/en/card-examples' },
+              { text: "Banned", link: "/banned" }
             ],
           },
         ],
@@ -144,15 +147,16 @@ function manaSymbolsPlugin(md) {
   symbols['E'] = `${base}/E.svg`; // Energy
 
   // Parser
-  md.inline.ruler.after('emphasis', 'mana-symbols', (state, silent) => {
+  md.inline.ruler.after('emphasis', 'mana-symbols', (state: StateInline, silent: boolean) => {
     const src = state.src;
     const pos = state.pos;
-
     if (src.charCodeAt(pos) !== 0x7b /* { */) return false;
+
     const end = src.indexOf('}', pos);
     if (end === -1) return false;
 
     const symbol = src.slice(pos + 1, end).toUpperCase();
+
     if (!symbols[symbol]) return false;
 
     if (!silent) {
